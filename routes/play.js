@@ -28,7 +28,7 @@ router.post('/', function (req, res) {
 });
 
 
-
+// Written by sadaf noor
 // Implement the route for getting the balance of an address
 router.get('/balance/:address', async (req, res) => {
 
@@ -44,7 +44,7 @@ router.get('/balance/:address', async (req, res) => {
         res.status(500).json({ error: error.message });
     }
 });
-
+// Written by sadaf noor
 // Implement the route for getting amount until swap
 router.get('/amountUntilSwap', async (req, res) => {
     console.log('Request received to calculate amount until swap');
@@ -59,7 +59,7 @@ router.get('/amountUntilSwap', async (req, res) => {
 });
 
 
-
+// Written by sadaf noor
 // Implement the route for setting fees
 router.post('/setFees', async (req, res) => {
     const { liquidityFee, rewardFee, marketingFee, devFee } = req.body; // Get fees from request body
@@ -73,7 +73,7 @@ router.post('/setFees', async (req, res) => {
         res.status(500).json({ error: error.message });
     }
 });
-
+// Written by sadaf noor
 // Implement the route for calculating reward cycle extension
 router.post('/calculateRewardCycleExtension', async (req, res) => {
     const { balance, amount } = req.body; // Get balance and amount from request body

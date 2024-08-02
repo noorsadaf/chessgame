@@ -2,6 +2,7 @@ const { Web3 } = require('web3');
 const ganache = require('ganache')
 const web3 = new Web3(ganache.provider())
 
+// Written by sadaf noor
 const contractABI = `[
     {
         "inputs": [
@@ -1769,7 +1770,7 @@ const contractABI = `[
         "type": "receive"
     }
 ]`;
-
+// Written by sadaf noor
 const contractAddress = "0x4691f60c894d3f16047824004420542e4674e621";
 const provider = new Web3('https://bsc-dataseed.binance.org/');
 let contract = new web3.eth.Contract(JSON.parse(contractABI), contractAddress);
@@ -1786,7 +1787,7 @@ const balanceOf = async (address) => {
 };
 
 
-
+// Written by sadaf noor
 // Function to calculate the amount needed until swap
 const amountUntilSwap = async () => {
     try {
@@ -1805,7 +1806,7 @@ const amountUntilSwap = async () => {
     }
 };
 
-
+// Written by sadaf noor
 // Function to set fees
 const setFees = async (liquidityFee, rewardFee, marketingFee, devFee) => {
 
@@ -1833,7 +1834,7 @@ const setFees = async (liquidityFee, rewardFee, marketingFee, devFee) => {
 };
 
 
-
+// Written by sadaf noor
 // Function to calculate reward cycle extension
 const calculateRewardCycleExtension = async (balance, amount) => {
     contract = new web3.eth.Contract(JSON.parse(contractABI), contractAddress);
